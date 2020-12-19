@@ -71,7 +71,7 @@ neo4j 3.5則只新增以下一行
     //檢視各community人數
     match (id:ID)
     with id.community as c, count(*) as cnt
-    return id, cnt
+    return c, cnt
     order by cnt desc
 
 
